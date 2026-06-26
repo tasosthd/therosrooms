@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Theros Rooms — Sea-View Stays in Nea Vrasna, Greece</title>
-<meta name="description" content="Theros Rooms: bright, sea-view studios & apartments steps from the Blue Flag beach in Nea Vrasna, Strymonikós Bay. Book direct for the best rate.">
-<meta property="og:title" content="Theros Rooms — Nea Vrasna">
-<meta property="og:description" content="Sea-view rooms steps from the Blue Flag beach in Nea Vrasna. Book direct.">
+<title data-i18n="meta.title">Theros Rooms — Δωμάτια με θέα στη θάλασσα, Νέα Βρασνά</title>
+<meta name="description" data-i18n="meta.desc" content="Theros Rooms: φωτεινά δωμάτια και διαμερίσματα με θέα στη θάλασσα, λίγα βήματα από την παραλία με Γαλάζια Σημαία στη Νέα Βρασνά. Κλείστε απευθείας για την καλύτερη τιμή.">
+<meta property="og:title" content="Theros Rooms — Νέα Βρασνά">
+<meta property="og:description" content="Δωμάτια με θέα στη θάλασσα, λίγα βήματα από την παραλία στη Νέα Βρασνά. Κλείστε απευθείας.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,15 +20,21 @@
   <div class="nav-inner">
     <a href="#top" class="brand">
       <span class="brand-mark">θ</span>
-      <span class="brand-name">Theros Rooms<small>Nea Vrasna</small></span>
+      <span class="brand-name">Theros Rooms<small>Νέα Βρασνά</small></span>
     </a>
     <nav class="nav-links">
-      <a href="#rooms">Rooms</a>
-      <a href="#beach">The Beach</a>
-      <a href="#location">Location</a>
-      <a href="#reviews">Reviews</a>
+      <a href="#rooms" data-i18n="nav.rooms">Δωμάτια</a>
+      <a href="#beach" data-i18n="nav.beach">Η Παραλία</a>
+      <a href="#location" data-i18n="nav.location">Τοποθεσία</a>
+      <a href="#reviews" data-i18n="nav.reviews">Κριτικές</a>
     </nav>
-    <a href="#book" class="btn btn-sm">Check availability</a>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Language / Γλώσσα">
+        <button type="button" class="lang-btn" data-lang="el" aria-pressed="true">EL</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="#book" class="btn btn-sm" data-i18n="nav.cta">Διαθεσιμότητα</a>
+    </div>
     <button class="nav-toggle" aria-label="Menu" id="navToggle"><span></span><span></span></button>
   </div>
 </header>
@@ -38,17 +44,17 @@
   <div class="hero-media" aria-hidden="true"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="eyebrow">Strymonikós Bay · Northern Greece</p>
-    <h1>Wake up to<br><em>the Aegean</em></h1>
-    <p class="hero-sub">Sun-filled sea-view rooms, a balcony for every morning coffee, and the Blue Flag beach of Nea Vrasna just a barefoot walk away.</p>
+    <p class="eyebrow" data-i18n="hero.eyebrow">Στρυμονικός Κόλπος · Βόρεια Ελλάδα</p>
+    <h1 data-i18n-html="hero.title">Ξυπνήστε με<br><em>το Αιγαίο</em></h1>
+    <p class="hero-sub" data-i18n="hero.sub">Ηλιόλουστα δωμάτια με θέα στη θάλασσα, ένα μπαλκόνι για κάθε πρωινό καφέ, και η παραλία με Γαλάζια Σημαία της Νέας Βρασνάς μόλις λίγα βήματα μακριά.</p>
     <div class="hero-cta">
-      <a href="#book" class="btn btn-lg">Check availability</a>
-      <a href="#rooms" class="btn btn-ghost btn-lg">View rooms</a>
+      <a href="#book" class="btn btn-lg" data-i18n="hero.cta1">Δείτε διαθεσιμότητα</a>
+      <a href="#rooms" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">Δείτε τα δωμάτια</a>
     </div>
     <ul class="hero-badges">
-      <li><strong>2 min</strong> to the sand</li>
-      <li><strong>Free</strong> parking &amp; Wi-Fi</li>
-      <li><strong>9.4</strong> guest rating</li>
+      <li><strong>2 λεπτά</strong> <span data-i18n="hero.badge1">από την άμμο</span></li>
+      <li><strong data-i18n="hero.badge2strong">Δωρεάν</strong> <span data-i18n="hero.badge2">πάρκινγκ &amp; Wi-Fi</span></li>
+      <li><strong>9.4</strong> <span data-i18n="hero.badge3">βαθμολογία επισκεπτών</span></li>
     </ul>
   </div>
   <a href="#rooms" class="hero-scroll" aria-label="Scroll down">↓</a>
@@ -58,64 +64,64 @@
 <section class="bookbar" id="book">
   <form class="bookbar-form" id="bookForm">
     <div class="field">
-      <label for="checkin">Check-in</label>
+      <label for="checkin" data-i18n="book.checkin">Άφιξη</label>
       <input type="date" id="checkin" name="checkin" required>
     </div>
     <div class="field">
-      <label for="checkout">Check-out</label>
+      <label for="checkout" data-i18n="book.checkout">Αναχώρηση</label>
       <input type="date" id="checkout" name="checkout" required>
     </div>
     <div class="field">
-      <label for="guests">Guests</label>
+      <label for="guests" data-i18n="book.guests">Άτομα</label>
       <select id="guests" name="guests">
-        <option>1 guest</option>
-        <option selected>2 guests</option>
-        <option>3 guests</option>
-        <option>4 guests</option>
-        <option>5+ guests</option>
+        <option data-i18n="book.g1">1 άτομο</option>
+        <option selected data-i18n="book.g2">2 άτομα</option>
+        <option data-i18n="book.g3">3 άτομα</option>
+        <option data-i18n="book.g4">4 άτομα</option>
+        <option data-i18n="book.g5">5+ άτομα</option>
       </select>
     </div>
     <div class="field">
-      <label for="roomtype">Room</label>
+      <label for="roomtype" data-i18n="book.room">Δωμάτιο</label>
       <select id="roomtype" name="roomtype">
-        <option selected>Any room</option>
-        <option>Sea-View Studio</option>
-        <option>Family Apartment</option>
-        <option>Garden Double</option>
+        <option selected data-i18n="book.rAny">Οποιοδήποτε δωμάτιο</option>
+        <option data-room="studio">Sea-View Studio</option>
+        <option data-room="family">Family Apartment</option>
+        <option data-room="garden">Garden Double</option>
       </select>
     </div>
-    <button type="submit" class="btn btn-book">Check &amp; reserve</button>
+    <button type="submit" class="btn btn-book" data-i18n="book.submit">Έλεγχος &amp; κράτηση</button>
   </form>
-  <p class="bookbar-note">Book direct — best rate guaranteed, no booking fees.</p>
+  <p class="bookbar-note" data-i18n="book.note">Κλείστε απευθείας — εγγυημένα η καλύτερη τιμή, χωρίς χρεώσεις κράτησης.</p>
 </section>
 
-<!-- ===== INTRO / WHY ===== -->
+<!-- ===== WHY ===== -->
 <section class="why">
   <div class="why-head">
-    <p class="eyebrow">Why Theros</p>
-    <h2>A small, family-run hideaway — not a hotel chain.</h2>
-    <p class="lead">Theros means “summer” in Greek, and that's exactly what we hand you at the door: salt air, slow mornings, and a host who actually knows the best taverna in the village.</p>
+    <p class="eyebrow" data-i18n="why.eyebrow">Γιατί Theros</p>
+    <h2 data-i18n="why.title">Ένα μικρό, οικογενειακό καταφύγιο — όχι αλυσίδα ξενοδοχείων.</h2>
+    <p class="lead" data-i18n="why.lead">Theros σημαίνει «καλοκαίρι» στα ελληνικά, και αυτό ακριβώς σας προσφέρουμε από την πόρτα: θαλασσινό αεράκι, ήρεμα πρωινά, και έναν οικοδεσπότη που ξέρει στ' αλήθεια την καλύτερη ταβέρνα του χωριού.</p>
   </div>
   <div class="why-grid">
     <article class="why-card">
       <span class="why-ico">🌊</span>
-      <h3>Steps from the sea</h3>
-      <p>The 5km Blue Flag beach starts where our garden ends — a two-minute, shoe-optional walk.</p>
+      <h3 data-i18n="why.c1t">Βήματα από τη θάλασσα</h3>
+      <p data-i18n="why.c1p">Η παραλία 5 χλμ. με Γαλάζια Σημαία ξεκινά εκεί που τελειώνει ο κήπος μας — δύο λεπτά με τα πόδια, ξυπόλητοι.</p>
     </article>
     <article class="why-card">
       <span class="why-ico">🌅</span>
-      <h3>Sunrise balconies</h3>
-      <p>East-facing sea-view rooms. Watch the bay turn gold from your own private balcony.</p>
+      <h3 data-i18n="why.c2t">Μπαλκόνια με ανατολή</h3>
+      <p data-i18n="why.c2p">Δωμάτια με θέα στη θάλασσα και ανατολικό προσανατολισμό. Δείτε τον κόλπο να χρυσίζει από το δικό σας μπαλκόνι.</p>
     </article>
     <article class="why-card">
       <span class="why-ico">🚗</span>
-      <h3>Park &amp; forget the car</h3>
-      <p>Free on-site parking. Tavernas, bakery and the seaside promenade are all on foot.</p>
+      <h3 data-i18n="why.c3t">Παρκάρετε &amp; ξεχάστε το αυτοκίνητο</h3>
+      <p data-i18n="why.c3p">Δωρεάν πάρκινγκ στον χώρο. Ταβέρνες, φούρνος και ο παραλιακός πεζόδρομος είναι όλα με τα πόδια.</p>
     </article>
     <article class="why-card">
       <span class="why-ico">❤️</span>
-      <h3>Hosted with care</h3>
-      <p>Daily cleaning, a warm welcome, and the little touches that make guests come back.</p>
+      <h3 data-i18n="why.c4t">Φιλοξενία με φροντίδα</h3>
+      <p data-i18n="why.c4p">Καθημερινός καθαρισμός, ζεστό καλωσόρισμα, και οι μικρές λεπτομέρειες που κάνουν τους επισκέπτες να επιστρέφουν.</p>
     </article>
   </div>
 </section>
@@ -123,9 +129,9 @@
 <!-- ===== ROOMS ===== -->
 <section class="rooms" id="rooms">
   <div class="section-head">
-    <p class="eyebrow">Stay with us</p>
-    <h2>Rooms made for slow summers</h2>
-    <p class="lead">Every room is air-conditioned, spotless, and comes with a balcony, free Wi-Fi and a kitchenette. Choose your view.</p>
+    <p class="eyebrow" data-i18n="rooms.eyebrow">Μείνετε μαζί μας</p>
+    <h2 data-i18n="rooms.title">Δωμάτια φτιαγμένα για ήρεμα καλοκαίρια</h2>
+    <p class="lead" data-i18n="rooms.lead">Κάθε δωμάτιο έχει κλιματισμό, είναι πεντακάθαρο, και διαθέτει μπαλκόνι, δωρεάν Wi-Fi και κουζινάκι. Διαλέξτε τη θέα σας.</p>
   </div>
 
   <div class="room-list">
@@ -134,13 +140,13 @@
       <div class="room-body">
         <div class="room-top">
           <h3>Sea-View Studio</h3>
-          <p class="room-price"><span>from</span> €58<small>/night</small></p>
+          <p class="room-price"><span data-i18n="rooms.from">από</span> €58<small data-i18n="rooms.night">/βράδυ</small></p>
         </div>
-        <p class="room-desc">Open-plan studio for two with a front balcony framing the bay. Wake, open the doors, and the Aegean is right there.</p>
+        <p class="room-desc" data-i18n="rooms.r1desc">Στούντιο ανοιχτού χώρου για δύο, με μπροστινό μπαλκόνι που πλαισιώνει τον κόλπο. Ξυπνάτε, ανοίγετε τις πόρτες, και το Αιγαίο είναι ακριβώς εκεί.</p>
         <ul class="room-feat">
-          <li>Sleeps 2</li><li>Sea view</li><li>Kitchenette</li><li>A/C</li><li>28 m²</li>
+          <li data-i18n="rooms.r1f1">2 άτομα</li><li data-i18n="rooms.r1f2">Θέα θάλασσα</li><li data-i18n="rooms.r1f3">Κουζινάκι</li><li data-i18n="rooms.r1f4">A/C</li><li>28 m²</li>
         </ul>
-        <a href="#book" class="btn btn-outline">Reserve this room</a>
+        <a href="#book" class="btn btn-outline" data-i18n="rooms.reserve">Κράτηση αυτού του δωματίου</a>
       </div>
     </article>
 
@@ -149,13 +155,13 @@
       <div class="room-body">
         <div class="room-top">
           <h3>Family Apartment</h3>
-          <p class="room-price"><span>from</span> €89<small>/night</small></p>
+          <p class="room-price"><span data-i18n="rooms.from">από</span> €89<small data-i18n="rooms.night">/βράδυ</small></p>
         </div>
-        <p class="room-desc">A separate bedroom, a sofa-bed living space and a full kitchen. Room to spread out after a long beach day — comfortably sleeps four.</p>
+        <p class="room-desc" data-i18n="rooms.r2desc">Ξεχωριστό υπνοδωμάτιο, σαλόνι με καναπέ-κρεβάτι και πλήρη κουζίνα. Άνεση για να απλωθείτε μετά από μια μεγάλη μέρα στην παραλία — άνετα για τέσσερα άτομα.</p>
         <ul class="room-feat">
-          <li>Sleeps 4</li><li>Sea view</li><li>Full kitchen</li><li>A/C</li><li>45 m²</li>
+          <li data-i18n="rooms.r2f1">4 άτομα</li><li data-i18n="rooms.r2f2">Θέα θάλασσα</li><li data-i18n="rooms.r2f3">Πλήρης κουζίνα</li><li data-i18n="rooms.r1f4">A/C</li><li>45 m²</li>
         </ul>
-        <a href="#book" class="btn btn-outline">Reserve this room</a>
+        <a href="#book" class="btn btn-outline" data-i18n="rooms.reserve">Κράτηση αυτού του δωματίου</a>
       </div>
     </article>
 
@@ -164,29 +170,29 @@
       <div class="room-body">
         <div class="room-top">
           <h3>Garden Double</h3>
-          <p class="room-price"><span>from</span> €49<small>/night</small></p>
+          <p class="room-price"><span data-i18n="rooms.from">από</span> €49<small data-i18n="rooms.night">/βράδυ</small></p>
         </div>
-        <p class="room-desc">A quiet, shaded double opening onto the garden — cooler in the afternoons and our best value. Perfect for a calm couple's escape.</p>
+        <p class="room-desc" data-i18n="rooms.r3desc">Ένα ήσυχο, σκιερό δίκλινο που ανοίγει στον κήπο — πιο δροσερό τα απογεύματα και η καλύτερη επιλογή αξίας. Ιδανικό για μια ήρεμη απόδραση για δύο.</p>
         <ul class="room-feat">
-          <li>Sleeps 2</li><li>Garden view</li><li>Kitchenette</li><li>A/C</li><li>24 m²</li>
+          <li data-i18n="rooms.r1f1">2 άτομα</li><li data-i18n="rooms.r3f2">Θέα κήπος</li><li data-i18n="rooms.r1f3">Κουζινάκι</li><li data-i18n="rooms.r1f4">A/C</li><li>24 m²</li>
         </ul>
-        <a href="#book" class="btn btn-outline">Reserve this room</a>
+        <a href="#book" class="btn btn-outline" data-i18n="rooms.reserve">Κράτηση αυτού του δωματίου</a>
       </div>
     </article>
   </div>
 </section>
 
-<!-- ===== BEACH / EXPERIENCE ===== -->
+<!-- ===== BEACH ===== -->
 <section class="beach" id="beach">
   <div class="beach-text">
-    <p class="eyebrow">The beach</p>
-    <h2>Five kilometres of Blue Flag shoreline</h2>
-    <p>Nea Vrasna's beach has flown the EU Blue Flag for clean water and safe swimming year after year. Shallow, golden, and gentle — the kind of sea where kids run in without a second thought.</p>
-    <p>By night, the seaside pedestrian promenade comes alive: gift shops, cocktail bars under the stars, and tavernas serving the day's catch. The August moonrise over the bay is the village's open secret.</p>
+    <p class="eyebrow" data-i18n="beach.eyebrow">Η παραλία</p>
+    <h2 data-i18n="beach.title">Πέντε χιλιόμετρα ακτογραμμής με Γαλάζια Σημαία</h2>
+    <p data-i18n="beach.p1">Η παραλία της Νέας Βρασνάς κατακτά τη Γαλάζια Σημαία της ΕΕ για καθαρά νερά και ασφαλές κολύμπι χρόνο με τον χρόνο. Ρηχή, χρυσή και ήπια — η θάλασσα όπου τα παιδιά τρέχουν μέσα χωρίς δεύτερη σκέψη.</p>
+    <p data-i18n="beach.p2">Τη νύχτα, ο παραλιακός πεζόδρομος ζωντανεύει: τουριστικά μαγαζάκια, μπαρ για κοκτέιλ κάτω από τα αστέρια, και ταβέρνες με τα φρέσκα ψάρια της ημέρας. Η ανατολή του Αυγουστιάτικου φεγγαριού πάνω από τον κόλπο είναι το μυστικό του χωριού.</p>
     <div class="beach-stats">
-      <div><strong>5 km</strong><span>of sandy beach</span></div>
-      <div><strong>Blue Flag</strong><span>clean-water award</span></div>
-      <div><strong>2 min</strong><span>door to water</span></div>
+      <div><strong>5 χλμ</strong><span data-i18n="beach.s1">αμμώδης παραλία</span></div>
+      <div><strong>Γαλάζια Σημαία</strong><span data-i18n="beach.s2">βραβείο καθαρών νερών</span></div>
+      <div><strong>2 λεπτά</strong><span data-i18n="beach.s3">από την πόρτα στο νερό</span></div>
     </div>
   </div>
   <div class="beach-gallery">
@@ -199,29 +205,29 @@
 <!-- ===== LOCATION ===== -->
 <section class="location" id="location">
   <div class="section-head">
-    <p class="eyebrow">Getting here</p>
-    <h2>Easy to reach, hard to leave</h2>
+    <p class="eyebrow" data-i18n="loc.eyebrow">Πώς θα έρθετε</p>
+    <h2 data-i18n="loc.title">Εύκολη πρόσβαση, δύσκολη αναχώρηση</h2>
   </div>
   <div class="loc-grid">
     <div class="loc-card">
       <span class="loc-ico">✈️</span>
-      <h3>From the airport</h3>
-      <p>Thessaloniki Airport (SKG) is a scenic 1h20 drive along the coast — about 96 km. We can arrange a transfer on request.</p>
+      <h3 data-i18n="loc.c1t">Από το αεροδρόμιο</h3>
+      <p data-i18n="loc.c1p">Το αεροδρόμιο Θεσσαλονίκης (SKG) απέχει μια γραφική διαδρομή 1ώρας 20΄ κατά μήκος της ακτής — περίπου 96 χλμ. Μπορούμε να κανονίσουμε μεταφορά κατόπιν αιτήματος.</p>
     </div>
     <div class="loc-card">
       <span class="loc-ico">🏖️</span>
-      <h3>In the village</h3>
-      <p>Supermarket, bakery and the nearest taverna are a 3-minute walk. The whole resort is flat and easy on foot.</p>
+      <h3 data-i18n="loc.c2t">Στο χωριό</h3>
+      <p data-i18n="loc.c2p">Σούπερ μάρκετ, φούρνος και η κοντινότερη ταβέρνα είναι 3 λεπτά με τα πόδια. Όλος ο οικισμός είναι επίπεδος και εύκολος για περπάτημα.</p>
     </div>
     <div class="loc-card">
       <span class="loc-ico">⛰️</span>
-      <h3>Worth a day trip</h3>
-      <p>Pine-backed Stavros, the wetlands of the Strymón delta, and the waterfalls near Asprovalta are all close by.</p>
+      <h3 data-i18n="loc.c3t">Αξίζει μια εκδρομή</h3>
+      <p data-i18n="loc.c3p">Ο πευκόφυτος Σταυρός, οι υγρότοποι του δέλτα του Στρυμόνα, και οι καταρράκτες κοντά στην Ασπροβάλτα είναι όλα κοντά.</p>
     </div>
   </div>
   <div class="map-wrap">
     <iframe
-      title="Map of Nea Vrasna"
+      title="Χάρτης Νέας Βρασνάς"
       src="https://www.openstreetmap.org/export/embed.html?bbox=23.74%2C40.62%2C23.82%2C40.66&layer=mapnik&marker=40.6405%2C23.7815"
       loading="lazy"></iframe>
   </div>
@@ -230,24 +236,24 @@
 <!-- ===== REVIEWS ===== -->
 <section class="reviews" id="reviews">
   <div class="section-head">
-    <p class="eyebrow">Guest love</p>
-    <h2>Rated 9.4 by people who came back</h2>
+    <p class="eyebrow" data-i18n="rev.eyebrow">Αγάπη επισκεπτών</p>
+    <h2 data-i18n="rev.title">Βαθμολογία 9.4 από όσους ξαναγύρισαν</h2>
   </div>
   <div class="review-grid">
     <blockquote class="review">
       <div class="stars">★★★★★</div>
-      <p>“Spotlessly clean, the balcony view of the bay was unreal, and the hosts treated us like family. We've already booked again for next summer.”</p>
-      <cite>Elena &amp; Marco — Italy</cite>
+      <p data-i18n="rev.q1">«Πεντακάθαρα, η θέα του κόλπου από το μπαλκόνι ήταν απίστευτη, και οι οικοδεσπότες μάς φέρθηκαν σαν οικογένεια. Έχουμε ήδη ξανακλείσει για το επόμενο καλοκαίρι.»</p>
+      <cite data-i18n="rev.c1">Έλενα &amp; Μάρκο — Ιταλία</cite>
     </blockquote>
     <blockquote class="review">
       <div class="stars">★★★★★</div>
-      <p>“Two minutes to the beach, free parking right outside, everything new and modern. The kids loved how calm and shallow the sea is here.”</p>
-      <cite>The Weber family — Germany</cite>
+      <p data-i18n="rev.q2">«Δύο λεπτά από την παραλία, δωρεάν πάρκινγκ ακριβώς έξω, όλα καινούργια και μοντέρνα. Τα παιδιά λάτρεψαν πόσο ήρεμη και ρηχή είναι η θάλασσα εδώ.»</p>
+      <cite data-i18n="rev.c2">Οικογένεια Weber — Γερμανία</cite>
     </blockquote>
     <blockquote class="review">
       <div class="stars">★★★★★</div>
-      <p>“The perfect base for a quiet week. Tavernas and the promenade on foot, sunrise from the balcony, and a host who pointed us to all the best spots.”</p>
-      <cite>Sophia — Athens</cite>
+      <p data-i18n="rev.q3">«Η τέλεια βάση για μια ήρεμη εβδομάδα. Ταβέρνες και πεζόδρομος με τα πόδια, ανατολή από το μπαλκόνι, και ένας οικοδεσπότης που μας έδειξε όλα τα καλύτερα σημεία.»</p>
+      <cite data-i18n="rev.c3">Σοφία — Αθήνα</cite>
     </blockquote>
   </div>
 </section>
@@ -255,11 +261,11 @@
 <!-- ===== FINAL CTA ===== -->
 <section class="finalcta">
   <div class="finalcta-inner">
-    <p class="eyebrow eyebrow--light">Summer 2026</p>
-    <h2>The good weeks book early.</h2>
-    <p>Reserve direct for our best rate and a balcony with your name on it. We reply within a few hours.</p>
-    <a href="#book" class="btn btn-lg btn-light">Check availability</a>
-    <p class="finalcta-call">or call us — <a href="tel:+302397065061">+30 23970 65061</a></p>
+    <p class="eyebrow eyebrow--light" data-i18n="final.eyebrow">Καλοκαίρι 2026</p>
+    <h2 data-i18n="final.title">Οι καλές εβδομάδες κλείνουν νωρίς.</h2>
+    <p data-i18n="final.sub">Κλείστε απευθείας για την καλύτερη τιμή μας και ένα μπαλκόνι με το όνομά σας. Απαντάμε μέσα σε λίγες ώρες.</p>
+    <a href="#book" class="btn btn-lg btn-light" data-i18n="final.cta">Δείτε διαθεσιμότητα</a>
+    <p class="finalcta-call"><span data-i18n="final.or">ή τηλεφωνήστε μας —</span> <a href="tel:+306986787073">+30 698 678 7073</a></p>
   </div>
 </section>
 
@@ -269,33 +275,33 @@
     <div>
       <a href="#top" class="brand brand--footer">
         <span class="brand-mark">θ</span>
-        <span class="brand-name">Theros Rooms<small>Nea Vrasna</small></span>
+        <span class="brand-name">Theros Rooms<small>Νέα Βρασνά</small></span>
       </a>
-      <p class="footer-tag">Sea-view rooms in Strymonikós Bay, Northern Greece.</p>
+      <p class="footer-tag" data-i18n="foot.tag">Δωμάτια με θέα στη θάλασσα στον Στρυμονικό Κόλπο, Βόρεια Ελλάδα.</p>
     </div>
     <div class="footer-col">
-      <h4>Visit</h4>
-      <p>Nea Vrasna, Thessaloniki<br>Central Macedonia, Greece</p>
+      <h4 data-i18n="foot.visit">Επισκεφθείτε</h4>
+      <p data-i18n-html="foot.addr">Νέα Βρασνά, Θεσσαλονίκη<br>Κεντρική Μακεδονία, Ελλάδα</p>
     </div>
     <div class="footer-col">
-      <h4>Contact</h4>
+      <h4 data-i18n="foot.contact">Επικοινωνία</h4>
       <p>
-        <a href="tel:+30 698 678 7073">+30 698 678 7073</a><br>
-        <a href="mailto:stay@therosrooms.gr">stay@therosrooms.gr</a>
+        <a href="tel:+306986787073">+30 698 678 7073</a><br>
+        <a href="mailto:therosrooms@gmail.com">therosrooms@gmail.com</a>
       </p>
     </div>
     <div class="footer-col">
-      <h4>Explore</h4>
-      <p><a href="#rooms">Rooms</a><br><a href="#beach">The beach</a><br><a href="#book">Book direct</a></p>
+      <h4 data-i18n="foot.explore">Εξερευνήστε</h4>
+      <p><a href="#rooms" data-i18n="nav.rooms">Δωμάτια</a><br><a href="#beach" data-i18n="nav.beach">Η Παραλία</a><br><a href="#book" data-i18n="foot.bookdirect">Κράτηση απευθείας</a></p>
     </div>
   </div>
   <div class="footer-bar">
-    <span>© 2026 Theros Rooms · Nea Vrasna</span>
-    <span>Made for slow summers</span>
+    <span data-i18n="foot.copy">© 2026 Theros Rooms · Νέα Βρασνά</span>
+    <span data-i18n="foot.slogan">Φτιαγμένο για ήρεμα καλοκαίρια</span>
   </div>
 </footer>
 
-<!-- ===== BOOKING TOAST ===== -->
+<!-- ===== TOAST ===== -->
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script src="assets/script.js"></script>

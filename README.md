@@ -20,11 +20,11 @@ Open `index.html` in a browser, or drop the whole folder on any static host (Net
 - "Reserve this room" buttons auto-select the room in the booking bar
 - Best-rate / book-direct messaging, social-proof rating (9.4), guest reviews
 - Trust badges (2 min to beach, free parking & Wi-Fi), location + map, final urgency CTA
+- **Bilingual Greek/English** with an EL/EN toggle in the nav (Greek is the default; choice is remembered)
 - Fully responsive, scroll reveals, reduced-motion respected
 
 ## Things to update before going live
-1. **Phone** — currently `+30 23970 65061` (in `index.html`, search `tel:`)
-2. **Email** — `stay@therosrooms.gr` (in `index.html` and `assets/script.js`)
+1. **Photos** — see below (the only real to-do; phone & email are already set).
 3. **Prices** — in the room cards (`.room-price`)
 4. **Photos** — room/beach blocks use CSS gradient placeholders. Replace with real photos:
    swap the `.room-img--*` and `.beach-gallery .g*` backgrounds for `url('assets/your-photo.jpg')`.
